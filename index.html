@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Smart Planner</h1>
+    <p>Manage your daily study tasks like a pro!</p>
+
+    <div class="stats">
+      <div class="stat">Level: <span id="level">1</span></div>
+      <div class="stat">Score: <span id="score">0</span></div>
+    </div>
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter your task">
+      <select id="categorySelect">
+        <option value="Study">Study</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Other">Other</option>
+      </select>
+      <select id="prioritySelect">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+      <span id="progressText">0% Complete</span>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <button onclick="clearAllTasks()" class="clear-btn">Clear All Tasks</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
